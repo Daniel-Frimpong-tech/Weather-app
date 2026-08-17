@@ -18,7 +18,7 @@ def weather():
     units = request.args.get('units')
     timezone = request.args.get('timezone')
     if location:
-        url = f'https://api.tomorrow.io/v4/timelines?location={location}&fields={fields}&timesteps={timesteps}&units={units}&timezone={timezone}&apikey=qgOzt44ihdYZRUPvHIU8xmWS4zalTh4q'
+        url = f'https://api.tomorrow.io/v4/timelines?location={location}&fields={fields}&timesteps={timesteps}&units={units}&timezone={timezone}&apikey=#'
         response = requests.get(url)
         data = response.json()
         if response.status_code == 200:
