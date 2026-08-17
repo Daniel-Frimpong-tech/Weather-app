@@ -62,7 +62,7 @@ document.getElementById('clear').onclick = function() {cleardata()};
 
 
  function ipdata() {
-    var ip_url = 'https://ipinfo.io/json?token=40e97a1962ba1e';
+    var ip_url = 'https://ipinfo.io/json?token=#';
  
      fetch(ip_url)
      .then(res => res.json())
